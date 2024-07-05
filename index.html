@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+    <style>
+        
+        .table1,.table2,.table3, .table4,td,tr{
+            border: 2px solid;
+            border-collapse: collapse;
+
+        }
+       img{
+           height:100px;
+           width: 100px;
+       }
+       @media screen and (min-width:100px) and (max-width:320px) {
+              .table1, .table2, .table3{
+                display: none;
+              }
+       }
+        @media screen and (min-width:320px) and (max-width:425px) {
+            .table2, .table3, .table4{display: none;}
+        }
+        @media screen and (min-width:425px) and (max-width:768px) {
+            .table1, .table3, .table4{
+                display: none;
+            }
+        }
+        @media screen and (min-width:768px) and (max-width:1024px) {
+            .table1, .table2, .table4{
+                display:none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+        <table class="table4">
+            <tr>
+                <td><img src="./images/a_letter.jpg" alt=""></td>
+            </tr>
+        </table>
+        <br>
+        <table class="table1">
+            <tr>
+                <td><img src="./images/10k.jpeg" alt=""></td>
+                <td><img src="./images/DELL.jpeg" alt=""></td>
+            </tr>
+            <tr>
+                <td><img src="./images/DELL.jpeg" alt=""></td>
+                <td><img src="./images/10k.jpeg" alt=""></td>
+            </tr>
+        </table>
+        <br><br>
+        <table class="table2">
+            <tr>
+               <td><img src="./images/skull.png" alt=""></td>
+               <td><img src="./images/laptop.jpg" alt=""></td>
+               <td><img src="./multimedia/images/TREE.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td><img src="./images/laptop.jpg" alt=""></td>
+                <td><img src="./images/TREE.jpg" alt=""></td>
+                <td><img src="./images/skull.png" alt=""></td>
+            </tr>
+            <tr>
+                <td><img src="./images/TREE.jpg" alt=""></td>
+                <td><img src="./images/skull.png" alt=""></td>
+                <td><img src="./images/laptop.jpg" alt=""></td>
+             </tr>
+        </table>
+        <br><br>
+        <table class="table3">
+            <tr>
+                <td><img src="./images/Speech-50.jpg" alt=""></td>
+                <td><img src="./images/10k.jpeg" alt=""></td>
+                <td><img src="./images/Thank-You-Picture.jpg" alt=""></td>
+                <td><img src="./images/DIFF IT and NON-IT.png" alt=""></td>
+            </tr>
+            <tr>
+                <td><img src="./images/DELL.jpeg" alt=""></td>
+                <td><img src="./images/venala.jpeg" alt=""></td>
+                <td><img src="./images/skull.png" alt=""></td>
+                <td><img src="./images/HALL.webp" alt=""></td>
+            </tr>
+            <tr>
+                <td><img src="./images/AI.webp" alt=""></td>
+                <td><img src="./images/TECH,NON-TECH.jpg" alt=""></td>
+                <td><img src="./images/TREE.jpg" alt=""></td>
+                <td><img src="./images/dell1.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td><img src="./images/laptop.jpg" alt=""></td>
+                <td><img src="./images/Speech-50.jpg" alt=""></td>
+                <td><img src="./images/GIRL.webp" alt=""></td>
+                <td><img src="./images/man.jpeg" alt=""></td>
+            </tr>
+        </table>
+</body>
+</html>
